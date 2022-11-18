@@ -1,0 +1,486 @@
+.home{
+    margin: 0px;
+    padding: 0px;
+        width: 100%;
+        height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    transition: all 300ms;
+  
+}
+
+.home.close{
+    display: none;
+}
+
+.heading{
+    display: flex;
+    height: 100%;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3.5em;
+    margin-bottom: 1.2rem;
+
+   
+}
+
+.heading>a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(244, 98, 98);
+    border-radius: 0.3rem;
+    color: white;
+    font-weight: 600;
+   letter-spacing: 1px;
+   font-family: 'Times New Roman', Times, serif;
+   transition: all 300ms;
+   
+}
+
+
+.heading>a:hover{
+         
+    transform: scale(1.1);
+}
+
+
+
+
+.form_container{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    width: 50%;
+    height: 100%;
+   position: relative;
+   text-align: start;
+        border-radius: 1rem;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 4rem;
+        margin-top: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.259);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.38);
+     margin-bottom: 5rem;
+
+  
+}
+
+h4{
+    color: rgba(241, 20, 20, 0.714);
+    font-size: 1.5rem;
+}
+
+.form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    align-items: flex-start;
+    gap: 2.5rem;    
+
+
+}
+
+.form_field{
+    display: flex;
+        width: 100%;
+        height: 100%;
+      
+
+}
+
+.inputfield{
+   
+    flex: 5;
+  
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.inputfield>input{
+    width: 100%;
+    height:20px;
+    border-radius: 5px;
+    padding: 8px;
+    border-color: rgba(155, 171, 186, 0.19);
+    border:1px solid rgba(0, 0, 0, 0.212);
+    transition: all 200ms;
+   
+}
+
+
+.inputfield>input:focus{
+    height: 23px;
+  
+    border-color: rgba(155, 171, 186, 0.19);
+}
+
+
+
+.label_f{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+   
+}
+
+.label_f>label{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1.2rem;
+    color: rgba(0, 0, 0, 0.845);
+    font-weight: 450;
+}
+
+.label_f>label>span{
+    color: orangered;
+    padding-left: 2px;
+}
+
+
+.label_for_skill{
+    display: flex;
+    width: 100%;
+}
+
+.label_for_skill>label>span{
+    color: orangered;
+    padding:0 5px;
+}
+
+.label_for_skill>label{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    color: rgba(0, 0, 0, 0.845);
+    font-weight: 450;
+}
+
+
+
+.checkboxdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.checkboxfield{
+    display: flex;
+    gap: 10px;
+    
+
+}
+
+
+
+.checkboxfield>label{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.789);
+    font-weight: 480;
+} 
+
+
+.button_s{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(244, 98, 98);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+   letter-spacing: 1px;
+   font-family: sans-serif;
+   transition: all 300ms;
+   border: none;
+   width: 250px;
+   cursor: pointer;
+   
+   
+}
+
+
+.btn:hover{
+         
+    transform: scale(1.1);
+}
+
+.button_s>h5{
+    font-size: 18px;
+    padding: 35px;
+    color: rgba(0, 0, 0, 0.688);
+    font-weight: 450;
+}
+
+
+
+
+
+/* popup css */
+
+ .popuphome{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(51, 41, 41, 0.958);
+    box-shadow: 5px 5px 10px whitesmoke;
+    display: none;
+ 
+   
+} 
+
+
+.popuphome.open{
+    display: block;
+}
+
+.form_sec{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+   
+ 
+
+}
+
+.form_c{
+
+        display: flex;
+        flex-direction: column;
+        width: 50rem;
+        height: 100%;
+        position: relative;
+        border-radius: 0.33rem;
+        background-color: rgb(245, 238, 238);
+        padding: 4rem;
+        margin-top: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.259);
+      z-index: 99;
+        margin-bottom: 5rem;
+        box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.658);
+   
+
+    }  
+
+
+    .firstsec{
+        display: flex;
+        width: 100%;
+        flex: 30%;
+        gap: 25px;
+    }
+
+    .details{
+        color: orangered;
+        font-size: 2rem;
+        padding-bottom: 20px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    
+    .detailscv{
+        color: orangered;
+        font-size: 2rem;
+        padding: 60px 0px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .secondsec{
+        display: flex;
+        width: 100%;
+        flex: 60%;
+    }
+
+    .leftdiv{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: 18rem;
+     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.388);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.228);
+
+    }
+
+    .card_container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+        
+        gap: 10px;
+    }
+
+    .card_container>img{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+    }
+
+  .card_container:nth-child(1)>{
+    font-size: 2 rem;
+  }
+
+    .rightdiv{
+        display: flex;
+        flex: 1;
+        width: 100%;
+        height: 18rem;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.388);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.228);
+        overflow: hidden;
+    }
+
+    .rightdivcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        align-items: center;
+       
+        
+    }
+
+
+    .cardcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        padding:40px 50px;
+        width: 50%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 50%;
+       
+    }
+
+
+
+    .cardcont>ul>{
+       overflow: hidden;
+    }
+
+    .cardcont>ul>li{
+        list-style-type: styll;
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+
+.pageview{
+    width: 500px;
+    height: 600px;
+
+    display: flex;
+    
+ overflow: hidden;
+    text-align: center;
+  gap: 80px;
+
+}
+
+.dcment{
+    width: 100%;
+     height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 30px;
+    overflow: hidden;
+}
+
+.btn2{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(244, 98, 98);
+    border-radius: 0.2rem;
+    color: white;
+    font-weight: 600;
+   letter-spacing: 1px;
+   font-family: sans-serif;
+   transition: all 300ms;
+   border: none;
+   width: 250px;
+   cursor: pointer;
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   align-self: center;
+   transition: all 300ms;
+}
+
+.btn2:hover{
+
+    transform: scale(1.1);
+}
+
+
+.pdfheading{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  
+}
+
+
+.icon{
+    color: rgb(236, 245, 245);
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .pdfcontainer{
+  
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  
+    
+} */
+
+
+.button_s.off{
+    display: none;
+}
